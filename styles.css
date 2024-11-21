@@ -26,3 +26,8 @@ li a {
         background-color: #00FFFF;
         color: white;
     }
+
+img {
+    width: 100px;
+    height: 100px;
+}
