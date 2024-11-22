@@ -29,11 +29,9 @@ li a {
 
 
 
-#forecast {
+#day {
     float: left;
     width: 20%;
-    background: red;
-    height: 200px;
 }
 
 #day img {
