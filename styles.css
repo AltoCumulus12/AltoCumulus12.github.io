@@ -27,12 +27,9 @@ li a {
         color: white;
     }
 
-#forecast {
-    height: 100%;
-    width: 100%; font-size: 0;
-}
 
-#day {
+
+#forecast {
     float: left;
     width: 20%;
     background: red;
