@@ -27,7 +27,41 @@ li a {
         color: white;
     }
 
-#day img {
+#forecast {
+    height: 100%;
+    width: 100%; font-size: 0;
+}
+
+#day1, #day2, #day3, #day4, #day5 {
+    width: 20%;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: top;
+    font-size: 12px;
+}
+
+#day1 img {
+    width: 100px;
+    height: 100px;
+}
+
+#day2 img {
+    width: 100px;
+    height: 100px;
+}
+
+#day3 img {
+    width: 100px;
+    height: 100px;
+}
+
+#day4 img {
+    width: 100px;
+    height: 100px;
+}
+
+#day5 img {
     width: 100px;
     height: 100px;
 }
