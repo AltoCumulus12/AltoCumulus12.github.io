@@ -59,24 +59,3 @@
         display: block;
     }
 }
-
-
-
-
-
-
-
-#day {
-    float: left;
-    width: 20%;
-}
-
-#day img {
-    width: 100px;
-    height: 100px;
-}
-
-
-#title h1{
-    color: blue;
-}
