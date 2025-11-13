@@ -3,23 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 
     <!-- Navigation Bar -->
     <div class="navbar">
-        <a href="#index">Home</a>
-        <a href="#weather">Weather</a>
-        <a href="#forecast">Forecast</a>
-        <a href="#contact">Contact</a>
+        <div class="logo">My Website</div>
+
+            <!-- Hamburger Button (shows on mobile) -->
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                ☰
+            </button>
+
+            <!-- Links -->
+            <div class="nav-links">
+                <a href="#index">Home</a>
+                <a href="#weather">Weather</a>
+                <a href="#forecast">Forecast</a>
+                <a href="#contact">Contact</a>
+            </div>
     </div>
 
     <!-- Page Content -->
     <div class="content">
         <h1>Welcome to my website</h1>
         <p>This is the beginning of an adventure<p>
+    </div>
+
+    <!-- Simple JavaScript for menu toggle -->
+    <script>
+        const toggleButton = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        toggleButton.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 
 </body>
 </html>

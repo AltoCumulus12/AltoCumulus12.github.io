@@ -1,28 +1,86 @@
-﻿body {
+﻿/* Basic Reset & Body */
+body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
-/* Navigation bar styling */
+/* Navbar container */
 .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #333;
-    overflow: hidden;
+    padding: 0 20px;
 }
 
-.navbar a {
-    float: left;
+/* Logo */
+.logo {
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 14px 0;
+}
+
+/* Nav links container */
+.nav-links {
+    display: flex;
+    gap: 10px;
+}
+
+/* Individual links */
+.nav-links a {
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 20px;
+    padding: 14px 16px;
     text-decoration: none;
 }
 
-.navbar a:hover {
+.nav-links a:hover {
     background-color: #575757;
+}
+
+/* Hamburger button (hidden on desktop) */
+.menu-toggle {
+    display: none;              /* shown only on small screens */
+    background: none;
+    border: none;
+    color: #f2f2f2;
+    font-size: 26px;
+    cursor: pointer;
 }
 
 /* Page content */
 .content {
     padding: 20px;
+}
+
+/* --------- Responsive Styles --------- */
+@media (max-width: 768px) {
+    /* Allow wrapping (logo on top, links below) */
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    /* Show hamburger on mobile */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Stack links vertically & hide by default */
+    .nav-links {
+        width: 100%;
+        flex-direction: column;
+        display: none;          /* hidden until .active is added */
+    }
+
+    /* Show when active (after clicking hamburger) */
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        text-align: left;
+        padding: 12px 20px;
+        border-top: 1px solid #444;
+    }
 }
