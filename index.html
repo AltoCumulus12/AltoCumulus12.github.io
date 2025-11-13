@@ -2,34 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>Example Website with Responsive Navbar</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-
     <!-- Navigation Bar -->
-    <div class="navbar">
+    <nav class="navbar">
         <div class="logo">My Website</div>
 
-            <!-- Hamburger Button (shows on mobile) -->
-            <button class="menu-toggle" aria-label="Toggle navigation">
-                ☰
-            </button>
+        <!-- Hamburger Button (shows on mobile) -->
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            ☰
+        </button>
 
-            <!-- Links -->
-            <div class="nav-links">
-                <a href="#index">Home</a>
-                <a href="#weather">Weather</a>
-                <a href="#forecast">Forecast</a>
-                <a href="#contact">Contact</a>
-            </div>
-    </div>
+        <!-- Links -->
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#weather">Weather</a>
+            <a href="#forecast">Forecast</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
 
     <!-- Page Content -->
     <div class="content">
-        <h1>Welcome to my website</h1>
-        <p>This is the beginning of an adventure<p>
+        <h1>Welcome to My Website</h1>
+        <p>This is an example webpage with a responsive navigation bar.</p>
+        <p>Resize the browser window to see the mobile menu in action.</p>
     </div>
 
     <!-- Simple JavaScript for menu toggle -->
@@ -41,6 +41,5 @@
             navLinks.classList.toggle('active');
         });
     </script>
-
 </body>
 </html>
