@@ -14,6 +14,25 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     >
+    <style>
+      /* Optional: make iframes responsive */
+      .embed-container {
+          position: relative;
+          padding-bottom: 56.25%; /* 16:9 ratio */
+          height: 0;
+          overflow: hidden;
+          max-width: 100%;
+          background: #000;
+      }
+      .embed-container iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border: 0;
+      }
+    </style>
 </head>
 <body>
 
@@ -83,7 +102,7 @@
 
   <h1 id="home">Welcome to My Weather Site</h1>
   <p>This example includes a responsive Bootstrap sticky navbar with a Radar dropdown.</p>
-  <p>Scroll down to see the navbar stay at the top.</p>
+  <p>Scroll down to see the navbar stay at the top and view the embedded radar.</p>
 
   <h2 id="weather" class="mt-5">Current Weather</h2>
   <p>Weather content goes here...</p>
@@ -92,13 +111,23 @@
   <p>Forecast content goes here...</p>
 
   <h2 id="local-radar" class="mt-5">Local Radar</h2>
-  <p>Embed your local radar here (e.g., iframe or image).</p>
+  <p>You can embed a more zoomed-in local radar here later.</p>
 
-  <h2 id="regional-radar" class="mt-5">Regional Radar</h2>
-  <p>Embed your regional radar here.</p>
+  <!-- ✅ Functional Regional Radar for Southeast Pennsylvania -->
+  <h2 id="regional-radar" class="mt-5">Regional Radar – Southeast Pennsylvania</h2>
+  <p>Live regional radar view centered around Southeast Pennsylvania:</p>
+
+  <div class="embed-container">
+    <iframe
+      src="https://www.rainviewer.com/map.html?loc=40.0,-76.0,7&oFa=1&oC=1&oU=1&oCS=1&oF=1&oAP=1&c=4&sm=1&sn=1"
+      loading="lazy"
+      title="Southeast Pennsylvania Regional Radar"
+      allowfullscreen>
+    </iframe>
+  </div>
 
   <h2 id="national-radar" class="mt-5">National Radar</h2>
-  <p>Embed a national composite radar here.</p>
+  <p>You can embed a national composite radar here (e.g., another iframe or image).</p>
 
   <h2 id="satellite" class="mt-5">Satellite</h2>
   <p>Satellite imagery content goes here.</p>
