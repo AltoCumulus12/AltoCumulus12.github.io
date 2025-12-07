@@ -1,25 +1,15 @@
-body {
-	background: #141E30;
-	background -webkit-linear-gradient(-45deg, #35577D, #141E30);
-	background: linear-gradient(-45deg, #35577D, #141E30);
-	margin: 0;
-	padding: 0;
+* {
+	font-family: Helvetica, Arial, sans-serif;
 }
 
-h1{
-	color: #FFF;
-	font-size: 2em;
-	padding-top: 100px;
-	width:100%;
-	font-family: Georgia;
+h1 {
+	color: SeaGreen;
 }
 
-p{
-	color: aliceblue;
-	font-weight: bold;
-	line-height: 1.3em;
-	text-align: left;
-	width: 100%;
-	font-family: Helvetica;
+p,li {
 	font-size: 18px;
+}
+
+a {
+	text-decoration: none;
 }
